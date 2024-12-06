@@ -1,0 +1,1 @@
+Docker run --name todo-api --network todo-net -it -v /app/node_modules -p 3000:3000 -e POSTGRES_HOST=todo-postgres -e POSTGRES_PORT=5432 -e POSTGRES_DATABASE=todo -e POSTGRES_USER=todo -e POSTGRES_PASSWORD=todo1234 -e REDIS_HOST=todo-redis -e REDIS_PORT=6379 -e ELASTICSEARCH_HOST=todo-elastic -e ELASTICSEARCH_PORT=9200 todo-api:1.0 
